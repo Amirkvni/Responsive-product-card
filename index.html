@@ -8,9 +8,20 @@
     <script>
       tailwind.config = {
         theme: {
+          maxWidth: {
+            "screen-2xl": "81.25rem",
+          },
           extend: {
-            colors: {
-              clifford: "#da373d",
+            container: {
+              center: true,
+            },
+            boxShadow: {
+              custom:
+                "0 123px 31px rgba(0,0,0,0.6),0 123px 31px rgba(0,0,0,0.3)",
+              custom2: "0 8px 24px -1px #31a9cc",
+            },
+            fontFamily: {
+              tanha: "tanha",
             },
           },
         },
@@ -22,9 +33,258 @@
           content-visibility: auto;
         }
       }
+      @layer base {
+        @font-face {
+          font-family: "tanha";
+          font-style: normal;
+          font-weight: bold;
+          src: url(fonts/Tanha-FD.woff2) format("woff2");
+        }
+      }
     </style>
   </head>
-  <body>
-  
+  <body class="box-border font-tanha" dir="rtl">
+    <div class="container max-w-screen-2xl my-20 grid grid-cols-4 gap-12">
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="grid_product w-[300px] inline-block">
+        <a href="#">
+          <div
+            class="item_grid_product py-3 px-7 rounded-[20px] transition-all duration-300 ease-in hover:bg-[#31a9cc] hover:shadow-custom2 [&>div]:hover:text-white [&>div>button]:hover:bg-yellow-400 [&>div]:hover:top-[-40px]"
+          >
+            <div
+              class="img_product mb-8 text-center relative after:content[' '] after:absolute after:w-[43%] after:h-[9%] after:shadow-custom after:rounded-full after:left-[30%] after:bottom-[112px] top-[0px] transition-all duration-300 ease-in"
+            >
+              <img src="img/jk_2.png" class="inline" />
+            </div>
+            <div
+              class="caption_item_product text-center text-black transition-all duration-300 ease-in"
+            >
+              <h5 class="title_product text-[20.8px]">کاپشن</h5>
+              <p class="my-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                voluptatem distinctio a?
+              </p>
+              <div class="price-product my-4 text-2xl font-bold">
+                300000تومان
+              </div>
+              <button
+                class="transition-color duration-300 ease-in add-to-card bg-transparent border-2 border-solid border-[#feac00] p-3 rounded-[12px]"
+              >
+                اضافه کردن به سبد خرید
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
